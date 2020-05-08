@@ -7,24 +7,65 @@
 //
 
 import UIKit
+import WebKit
 
-class ThirdTabViewController: UIViewController {
-
+class ThirdTabViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
+    
+    @IBOutlet var inputTexField: UITextField!
+    @IBOutlet var showButton: UIButton!
+    @IBOutlet var webView: WKWebView!
+    
+    // MARK: - View Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Load Web view
+    func loadWebView(urlString: String) {
+        let url: URL?
+        if urlString.hasPrefix("https://") {
+            url = URL(string: urlString)
+        } else {
+            url = URL(string: "http://" + urlString)
+        }
+        let request = URLRequest(url: url!)
+        webView.load(request)
     }
-    */
-
+    
+    
+    // MARK: - UIAction Methods
+    
+    @IBAction func buttonActions(_ sender: Any) {
+        guard NetMonitor.shared.netOn else {
+            let alert = MyManager.sharedInstance.alert(message: "Check your internet connection")
+            present(alert, animated: true)
+            return
+        }
+        
+        inputTexField.resignFirstResponder()
+        
+        guard MyManager.sharedInstance.verifyUrl(urlString: inputTexField.text!) else {
+            let alert = MyManager.sharedInstance.alert(message: "Entered URL is not a valid URL")
+            present(alert, animated: true)
+            return
+        }
+        
+        self.loadWebView(urlString: inputTexField.text!)
+    }
 }
+
+extension ThirdTabViewController: UITextFieldDelegate {
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+}
+

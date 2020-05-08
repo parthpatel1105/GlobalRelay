@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72D877624CD645329EC92FED /* Pods_Global_RelayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44427EF5962A9BCD8B4EF38 /* Pods_Global_RelayTests.framework */; };
 		B214CE1224633D6B0060D8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214CE1124633D6B0060D8EE /* AppDelegate.swift */; };
 		B214CE1424633D6B0060D8EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214CE1324633D6B0060D8EE /* SceneDelegate.swift */; };
-		B214CE1624633D6B0060D8EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214CE1524633D6B0060D8EE /* ViewController.swift */; };
+		B214CE1624633D6B0060D8EE /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214CE1524633D6B0060D8EE /* FirstTabViewController.swift */; };
 		B214CE1924633D6B0060D8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B214CE1724633D6B0060D8EE /* Main.storyboard */; };
 		B214CE1B24633D6F0060D8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214CE1A24633D6F0060D8EE /* Assets.xcassets */; };
 		B214CE1E24633D6F0060D8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B214CE1C24633D6F0060D8EE /* LaunchScreen.storyboard */; };
 		B214CE2924633D6F0060D8EE /* Global_RelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214CE2824633D6F0060D8EE /* Global_RelayTests.swift */; };
 		B214CE3424633D6F0060D8EE /* Global_RelayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214CE3324633D6F0060D8EE /* Global_RelayUITests.swift */; };
+		B218FDFB2463407700B8A427 /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218FDFA2463407700B8A427 /* SecondTabViewController.swift */; };
+		B218FDFD2463408600B8A427 /* ThirdTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218FDFC2463408600B8A427 /* ThirdTabViewController.swift */; };
+		B218FDFF2463466A00B8A427 /* MyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218FDFE2463466A00B8A427 /* MyManager.swift */; };
+		B23C92FD2463A84E00995930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C92FC2463A84E00995930 /* DetailViewController.swift */; };
+		B23C92FF246499E700995930 /* NetMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C92FE246499E600995930 /* NetMonitor.swift */; };
+		B27BD1AE2464B87E001BB210 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27BD1AD2464B87E001BB210 /* WebKit.framework */; };
+		B27BD1B32464CC86001BB210 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27BD1B22464CC86001BB210 /* Country.swift */; };
+		B27BD1B52464CD11001BB210 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27BD1B42464CD11001BB210 /* CountryDetails.swift */; };
+		B27BD1B82464CEF6001BB210 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27BD1B72464CEF6001BB210 /* CountryTableViewCell.swift */; };
+		C3B5DA861B393C1DAEE4B1A0 /* Pods_Global_Relay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D898FE549F6EC9E0E0E851FF /* Pods_Global_Relay.framework */; };
+		DA2005D26D96A6B662769531 /* Pods_Global_Relay_Global_RelayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E18D14E3E7B1E981C67C17 /* Pods_Global_Relay_Global_RelayUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44E18D14E3E7B1E981C67C17 /* Pods_Global_Relay_Global_RelayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Global_Relay_Global_RelayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7173CDBD0FEAB263BDF490 /* Pods-Global Relay-Global RelayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Global Relay-Global RelayUITests.debug.xcconfig"; path = "Target Support Files/Pods-Global Relay-Global RelayUITests/Pods-Global Relay-Global RelayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AA89009D9F555BFEBF099E7 /* Pods-Global Relay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Global Relay.release.xcconfig"; path = "Target Support Files/Pods-Global Relay/Pods-Global Relay.release.xcconfig"; sourceTree = "<group>"; };
+		6A9C2D2AB87A7A3740A57608 /* Pods-Global Relay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Global Relay.debug.xcconfig"; path = "Target Support Files/Pods-Global Relay/Pods-Global Relay.debug.xcconfig"; sourceTree = "<group>"; };
+		6D0D9053FE8D66258ADFEAC1 /* Pods-Global Relay-Global RelayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Global Relay-Global RelayUITests.release.xcconfig"; path = "Target Support Files/Pods-Global Relay-Global RelayUITests/Pods-Global Relay-Global RelayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A44427EF5962A9BCD8B4EF38 /* Pods_Global_RelayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Global_RelayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214CE0E24633D6B0060D8EE /* Global Relay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Relay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214CE1124633D6B0060D8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B214CE1324633D6B0060D8EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B214CE1524633D6B0060D8EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B214CE1524633D6B0060D8EE /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
 		B214CE1824633D6B0060D8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B214CE1A24633D6F0060D8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B214CE1D24633D6F0060D8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +67,18 @@
 		B214CE2F24633D6F0060D8EE /* Global RelayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Global RelayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214CE3324633D6F0060D8EE /* Global_RelayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global_RelayUITests.swift; sourceTree = "<group>"; };
 		B214CE3524633D6F0060D8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B218FDFA2463407700B8A427 /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
+		B218FDFC2463408600B8A427 /* ThirdTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabViewController.swift; sourceTree = "<group>"; };
+		B218FDFE2463466A00B8A427 /* MyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyManager.swift; sourceTree = "<group>"; };
+		B23C92FC2463A84E00995930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B23C92FE246499E600995930 /* NetMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetMonitor.swift; sourceTree = "<group>"; };
+		B27BD1AD2464B87E001BB210 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B27BD1B22464CC86001BB210 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		B27BD1B42464CD11001BB210 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
+		B27BD1B72464CEF6001BB210 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		D898FE549F6EC9E0E0E851FF /* Pods_Global_Relay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Global_Relay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E635C7D1FE7F8346A5197EF7 /* Pods-Global RelayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Global RelayTests.debug.xcconfig"; path = "Target Support Files/Pods-Global RelayTests/Pods-Global RelayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE9BF8CB0ED011EEB07F1C5E /* Pods-Global RelayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Global RelayTests.release.xcconfig"; path = "Target Support Files/Pods-Global RelayTests/Pods-Global RelayTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27BD1AE2464B87E001BB210 /* WebKit.framework in Frameworks */,
+				C3B5DA861B393C1DAEE4B1A0 /* Pods_Global_Relay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D877624CD645329EC92FED /* Pods_Global_RelayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2005D26D96A6B662769531 /* Pods_Global_Relay_Global_RelayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +117,8 @@
 				B214CE2724633D6F0060D8EE /* Global RelayTests */,
 				B214CE3224633D6F0060D8EE /* Global RelayUITests */,
 				B214CE0F24633D6B0060D8EE /* Products */,
+				FB3CC7832B3DD2206A53DDB2 /* Pods */,
+				BE32D79A1DDD6B466CCF607B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +137,14 @@
 			children = (
 				B214CE1124633D6B0060D8EE /* AppDelegate.swift */,
 				B214CE1324633D6B0060D8EE /* SceneDelegate.swift */,
-				B214CE1524633D6B0060D8EE /* ViewController.swift */,
+				B214CE1524633D6B0060D8EE /* FirstTabViewController.swift */,
+				B23C92FC2463A84E00995930 /* DetailViewController.swift */,
+				B218FDFA2463407700B8A427 /* SecondTabViewController.swift */,
+				B218FDFC2463408600B8A427 /* ThirdTabViewController.swift */,
+				B218FDFE2463466A00B8A427 /* MyManager.swift */,
+				B23C92FE246499E600995930 /* NetMonitor.swift */,
+				B27BD1B62464CED7001BB210 /* Cell */,
+				B27BD1B12464CC6D001BB210 /* Model */,
 				B214CE1724633D6B0060D8EE /* Main.storyboard */,
 				B214CE1A24633D6F0060D8EE /* Assets.xcassets */,
 				B214CE1C24633D6F0060D8EE /* LaunchScreen.storyboard */,
@@ -128,6 +171,47 @@
 			path = "Global RelayUITests";
 			sourceTree = "<group>";
 		};
+		B27BD1B12464CC6D001BB210 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B27BD1B22464CC86001BB210 /* Country.swift */,
+				B27BD1B42464CD11001BB210 /* CountryDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B27BD1B62464CED7001BB210 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B27BD1B72464CEF6001BB210 /* CountryTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BE32D79A1DDD6B466CCF607B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B27BD1AD2464B87E001BB210 /* WebKit.framework */,
+				D898FE549F6EC9E0E0E851FF /* Pods_Global_Relay.framework */,
+				44E18D14E3E7B1E981C67C17 /* Pods_Global_Relay_Global_RelayUITests.framework */,
+				A44427EF5962A9BCD8B4EF38 /* Pods_Global_RelayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB3CC7832B3DD2206A53DDB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A9C2D2AB87A7A3740A57608 /* Pods-Global Relay.debug.xcconfig */,
+				5AA89009D9F555BFEBF099E7 /* Pods-Global Relay.release.xcconfig */,
+				4A7173CDBD0FEAB263BDF490 /* Pods-Global Relay-Global RelayUITests.debug.xcconfig */,
+				6D0D9053FE8D66258ADFEAC1 /* Pods-Global Relay-Global RelayUITests.release.xcconfig */,
+				E635C7D1FE7F8346A5197EF7 /* Pods-Global RelayTests.debug.xcconfig */,
+				EE9BF8CB0ED011EEB07F1C5E /* Pods-Global RelayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B214CE3824633D6F0060D8EE /* Build configuration list for PBXNativeTarget "Global Relay" */;
 			buildPhases = (
+				6ED5894D63EAEC6174B9C17E /* [CP] Check Pods Manifest.lock */,
 				B214CE0A24633D6B0060D8EE /* Sources */,
 				B214CE0B24633D6B0060D8EE /* Frameworks */,
 				B214CE0C24633D6B0060D8EE /* Resources */,
@@ -152,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B214CE3B24633D6F0060D8EE /* Build configuration list for PBXNativeTarget "Global RelayTests" */;
 			buildPhases = (
+				9E1127572C38A5A23B148899 /* [CP] Check Pods Manifest.lock */,
 				B214CE2024633D6F0060D8EE /* Sources */,
 				B214CE2124633D6F0060D8EE /* Frameworks */,
 				B214CE2224633D6F0060D8EE /* Resources */,
@@ -170,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B214CE3E24633D6F0060D8EE /* Build configuration list for PBXNativeTarget "Global RelayUITests" */;
 			buildPhases = (
+				1B55AF651AAB9B03BE08F0EF /* [CP] Check Pods Manifest.lock */,
 				B214CE2B24633D6F0060D8EE /* Sources */,
 				B214CE2C24633D6F0060D8EE /* Frameworks */,
 				B214CE2D24633D6F0060D8EE /* Resources */,
@@ -254,14 +341,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B55AF651AAB9B03BE08F0EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Global Relay-Global RelayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ED5894D63EAEC6174B9C17E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Global Relay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E1127572C38A5A23B148899 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Global RelayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B214CE0A24633D6B0060D8EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B214CE1624633D6B0060D8EE /* ViewController.swift in Sources */,
+				B27BD1B82464CEF6001BB210 /* CountryTableViewCell.swift in Sources */,
+				B214CE1624633D6B0060D8EE /* FirstTabViewController.swift in Sources */,
+				B218FDFD2463408600B8A427 /* ThirdTabViewController.swift in Sources */,
+				B23C92FF246499E700995930 /* NetMonitor.swift in Sources */,
 				B214CE1224633D6B0060D8EE /* AppDelegate.swift in Sources */,
+				B27BD1B52464CD11001BB210 /* CountryDetails.swift in Sources */,
+				B218FDFB2463407700B8A427 /* SecondTabViewController.swift in Sources */,
 				B214CE1424633D6B0060D8EE /* SceneDelegate.swift in Sources */,
+				B218FDFF2463466A00B8A427 /* MyManager.swift in Sources */,
+				B27BD1B32464CC86001BB210 /* Country.swift in Sources */,
+				B23C92FD2463A84E00995930 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,10 +596,13 @@
 		};
 		B214CE3924633D6F0060D8EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A9C2D2AB87A7A3740A57608 /* Pods-Global Relay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Global Relay/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +616,13 @@
 		};
 		B214CE3A24633D6F0060D8EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA89009D9F555BFEBF099E7 /* Pods-Global Relay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Global Relay/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +636,7 @@
 		};
 		B214CE3C24633D6F0060D8EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E635C7D1FE7F8346A5197EF7 /* Pods-Global RelayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +658,7 @@
 		};
 		B214CE3D24633D6F0060D8EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9BF8CB0ED011EEB07F1C5E /* Pods-Global RelayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +680,7 @@
 		};
 		B214CE3F24633D6F0060D8EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A7173CDBD0FEAB263BDF490 /* Pods-Global Relay-Global RelayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +700,7 @@
 		};
 		B214CE4024633D6F0060D8EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0D9053FE8D66258ADFEAC1 /* Pods-Global Relay-Global RelayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

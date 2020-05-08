@@ -10,6 +10,10 @@ import UIKit
 
 class CountryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var countryImageView: UIImageView!
+    @IBOutlet weak var countryDescriptionLabel: UILabel!
+    @IBOutlet weak var countryTitleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +24,39 @@ class CountryTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configureCellWith(_ country: Country)
+    {
+        countryImageView.image = country.image        
+        countryTitleLabel.attributedText = NSMutableAttributedString().bold(country.title).normal("\n\(country.description)")
+            
+    }
 
+}
+
+extension NSMutableAttributedString {
+
+    func bold(_ value:String) -> NSMutableAttributedString {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 2
+        
+        let attributes:[NSAttributedString.Key : Any] = [
+            .font : Font.bolFont, .paragraphStyle : paragraphStyle,
+        ]
+        self.append(NSAttributedString(string: value, attributes:attributes))
+        return self
+    }
+
+    func normal(_ value:String) -> NSMutableAttributedString {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 2
+
+        let attributes:[NSAttributedString.Key : Any] = [
+            .font : Font.normalFont, .paragraphStyle : paragraphStyle,
+        ]
+
+        self.append(NSAttributedString(string: value, attributes:attributes))
+        
+        return self
+    }
 }

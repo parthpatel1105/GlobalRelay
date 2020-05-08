@@ -9,22 +9,43 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    var data: [String:Any]!
+    var country: Country?
+    @IBOutlet var infoText: UITextField!
+    @IBOutlet var imgView: UIImageView!
+    @IBOutlet var infoLabel: UILabel!
+    var completionHandler:((String) -> Int)?
+    
+    // MARK: - View Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.title = country?.title
+        self.infoLabel.text = country?.description
+        self.infoLabel.font = Font.normalFont
+        self.imgView.image = country?.image
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.addObserver(self,selector: #selector(timerUpdate(notification:)), name: NSNotification.Name(rawValue: "timerUpdate"), object: nil)
     }
-    */
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "timerUpdate"), object: nil)
+    }
+    
+    @objc func timerUpdate(notification:Notification) {
+        if let country = notification.userInfo?["data"] as? Country {
+            self.title = country.title
+            self.infoLabel.text = country.description
+            self.imgView.image = country.image
+        }
+    }
+    
+    
 }
